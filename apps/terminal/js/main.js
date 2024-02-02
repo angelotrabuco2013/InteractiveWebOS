@@ -33,7 +33,7 @@ terminal_filesystem={
 };
 
 out=document.querySelector("#out")
-__console_info="Welcome to Terminal";
+__console_info="Session started";
 outputs=__console_info;
 now_dir="";
 now_command="";
@@ -78,13 +78,13 @@ function runBashCommand(__command){
     }
     writeOutput("user@desktop:"+now_dir+"~$ "+now_command);
     if(__the_command=="mkdir"||__the_command=="rmdir"||__the_command=="cp"||__the_command=="mv"||__the_command=="rm"){
-        writeOutput(__the_command+": Read-only file system");
+        writeOutput(__the_command+": not implemented");
     }else if(__the_command==""){
         writeOutput("",0);
     }else if(__the_command=="apt-get"||__the_command=="apt"||__the_command=="dpkg"){
-        writeOutput("Package manager is busy now.")
+        writeOutput("package managers are not supported yet")
     }else if(__the_command=="su"||__the_command=="sudo"){
-        writeOutput("You are already logged in as root user.")
+        writeOutput("sudo: You are already logged in as root user.")
     }else if(__the_command=="sh"||__the_command=="bash"){
         writeOutput(__console_info);
     }else if(__the_command=="python3"){
@@ -98,13 +98,13 @@ function runBashCommand(__command){
                 now_dir+=__command[1]+"/";
                 writeOutput("",0);
             }else{
-                writeOutput("cd: Directory not found");
+                writeOutput("cd: unable to find directory");
             }
         }else if(__command[1].startsWith("..")){
             now_dir="/";
             writeOutput("",0);
         }else{
-            writeOutput("It's just a demo :)")
+            writeOutput("not implemented")
         }
     }else if(__the_command=="ls"||__the_command=="dir"){
         if(now_dir=="/"){
@@ -114,7 +114,7 @@ function runBashCommand(__command){
             }
             __temp.forEach((_)=>{writeOutput(_);})
         }else{
-            writeOutput("It's just a demo. :)")
+            writeOutput("ls: not implmented")
         }
     }else if(__the_command=="help"){
         writeOutput("\
@@ -123,7 +123,7 @@ apt-get  apt     dpkg    su      sudo\n\
 sh       bash    echo    help    clear\n\
 cd       ls      dir     python3 ")
     }else{
-        writeOutput(__the_command+": Command not found")
+        writeOutput(__the_command+": command not found")
     }
     clearCommands();
     updateOutputsWithCommands();
