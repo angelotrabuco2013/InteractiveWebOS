@@ -114,7 +114,7 @@ function runBashCommand(__command){
             }
             __temp.forEach((_)=>{writeOutput(_);})
         }else{
-            writeOutput("ls: not implmented")
+            writeOutput("ls: not implemented")
         }
     }else if(__the_command=="help"){
         writeOutput("\
