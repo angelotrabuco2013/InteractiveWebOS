@@ -1,6 +1,6 @@
-# Ubuntu Online
+# Interactive Operating Sysstem
 
-Web based Ubuntu 21.10 desktop remake. You can try latest ubuntu edition remake from [here](https://mwalters75.github.io/ubuntu-online/)
+A fork of a web based Ubuntu 21.10 desktop remake. This fork introduces more apps, UI updates and bug fixes. You can view the page [here](https://angelotrabuco2013.github.io/InteractiveWebOS/).
 
 ## Features
 
@@ -12,10 +12,9 @@ Web based Ubuntu 21.10 desktop remake. You can try latest ubuntu edition remake 
 
 ## Why I did it?
 
-For introduce the Ubuntu environment' beauty (on web) and for fun. :) I was inspired from [tour.ubuntu.com
-](https://github.com/canonical-web-and-design/tour.ubuntu.com) (however not used code from this project)
+I forked the original project by Max, since this project was becoming more and more inactive &amp; unpopular.
 
-## You can [try it!](https://mwalters75.github.io/ubuntu-online/)
+<h6>You can <a href="https://angelotrabuco2013.github.io/InteractiveWebOS/">try it!</a></h6>
 
 ## To-Do List
 
@@ -26,12 +25,12 @@ For introduce the Ubuntu environment' beauty (on web) and for fun. :) I was insp
 
 ## Notes
 
-> Ubuntu Tour is compatible with touch devices. (Window resize on mobile is harder than on computer. And some browsers may not support resize on mobile.)
+* Ubuntu Tour is compatible with touch devices. (Window resize on mobile is harder than on computer. And some browsers may not support resize on mobile.)
 
-> This website can't run correctly without server. Because [Same Origin Policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) block communication with iframes on `file://`.
+* This website can't run correctly without server. Because [Same Origin Policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) block communication with iframes on `file://`.
 
-> Ubuntu Tour' Web Browser can't render all pages because of [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).
+* Ubuntu Tour' Web Browser can't render all pages because of [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).
 
 ## License
 
-This project licensed by MPL2. Learn more from [here](./LICENSE.md)
+This project licensed by GNU General Public License v3. Learn more from [here](./LICENSE.md)
