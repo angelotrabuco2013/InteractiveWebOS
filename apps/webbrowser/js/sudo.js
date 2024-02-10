@@ -1,4 +1,4 @@
-customElements.define('sudo', class extends HTMLIFrameElement {
+customElements.define('x-frame-bypass', class extends HTMLIFrameElement {
 	static get observedAttributes() {
 		return ['src']
 	}
@@ -48,7 +48,7 @@ customElements.define('sudo', class extends HTMLIFrameElement {
 				this.srcdoc = data.replace(/<head([^>]*)>/i, `<head$1>
 	<base href="${url}">
 	<script>
-	// Sudo (X-Frame-Bypass) navigation event handlers
+	// X-Frame-Bypass navigation event handlers
 	document.addEventListener('click', e => {
 		if (frameElement && document.activeElement && document.activeElement.href) {
 			e.preventDefault()
@@ -65,7 +65,7 @@ customElements.define('sudo', class extends HTMLIFrameElement {
 		}
 	})
 	</script>`)
-		}).catch(e => console.error('Failed to fetch site content: ', e))
+		}).catch(e => console.error('Cannot load X-Frame-Bypass:', e))
 	}
 	fetchProxy (url, options, i) {
 		const proxies = (options || {}).proxies || [
