@@ -1,4 +1,4 @@
-# Interactive Operating Sysstem
+# Interactive Operating System
 
 A fork of a web based Ubuntu 21.10 desktop remake. This fork introduces more apps, UI updates and bug fixes. You can view the page [here](https://angelotrabuco2013.github.io/InteractiveWebOS/).
 
