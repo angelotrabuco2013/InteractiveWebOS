@@ -1,5 +1,5 @@
 body{
-    background: #222222;
+    background: #ffffff;
     cursor: default;
 }
 
@@ -14,7 +14,7 @@ body{
 
 .label{
     position: fixed;
-    color: #ffffff;
+    color: black;
     top: 52%;
     left: 50%;
     transform: translate(-50%,0px);
